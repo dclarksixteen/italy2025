@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Nostra Vacanza Italiana - Family Trip Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>La Nostra Vacanza Italiana</h1>
+            <p class="subtitle">Our Family Adventure in Italy</p>
+            <div class="trip-details">
+                <span><i class="fas fa-map-marker-alt"></i> Rome, Florence, Venice</span>
+                <span><i class="fas fa-calendar-alt"></i> June 10-20, 2025</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-tabs">
+                <li data-tab="itinerary" class="active"><i class="fas fa-route"></i> Itinerary</li>
+                <li data-tab="weather"><i class="fas fa-cloud-sun"></i> Weather</li>
+                <li data-tab="food"><i class="fas fa-utensils"></i> Food & Drink</li>
+                <li data-tab="activities"><i class="fas fa-walking"></i> Things to Do</li>
+                <li data-tab="facts"><i class="fas fa-info-circle"></i> Fun Facts</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="itinerary" class="tab-content active">
+            <h2>Trip Itinerary</h2>
+            <div class="itinerary-days">
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Day 1 - June 10</h3>
+                        <span class="location">Rome</span>
+                    </div>
+                    <ul class="day-activities">
+                        <li><span class="time">10:00</span> Arrival at Rome Fiumicino Airport</li>
+                        <li><span class="time">12:30</span> Check-in at Hotel</li>
+                        <li><span class="time">14:00</span> Lunch at Trattoria da Luigi</li>
+                        <li><span class="time">16:00</span> Visit the Colosseum</li>
+                        <li><span class="time">19:00</span> Welcome dinner at Ristorante La Pergola</li>
+                    </ul>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Day 2 - June 11</h3>
+                        <span class="location">Rome</span>
+                    </div>
+                    <ul class="day-activities">
+                        <li><span class="time">08:00</span> Breakfast at hotel</li>
+                        <li><span class="time">09:30</span> Vatican Museums & Sistine Chapel</li>
+                        <li><span class="time">13:00</span> Lunch near St. Peter's Square</li>
+                        <li><span class="time">15:00</span> Roman Forum & Palatine Hill</li>
+                        <li><span class="time">19:00</span> Dinner in Trastevere</li>
+                    </ul>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Day 3 - June 12</h3>
+                        <span class="location">Rome → Florence</span>
+                    </div>
+                    <ul class="day-activities">
+                        <li><span class="time">07:30</span> Breakfast at hotel</li>
+                        <li><span class="time">09:00</span> Train to Florence</li>
+                        <li><span class="time">11:30</span> Check-in at Florence hotel</li>
+                        <li><span class="time">13:00</span> Lunch at Mercato Centrale</li>
+                        <li><span class="time">15:00</span> Visit the Duomo</li>
+                        <li><span class="time">19:00</span> Dinner near Ponte Vecchio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="weather" class="tab-content">
+            <h2>Weather Forecast</h2>
+            <div class="info-box">
+                <h3>Italian Weather in June</h3>
+                <p>June brings warm and sunny weather to Italy. Temperatures typically range from 18°C to 28°C (65°F to 82°F) with occasional light showers. Evenings can be cooler, especially in northern regions.</p>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>What to Pack</h4>
+                        <ul>
+                            <li>Light, breathable clothing</li>
+                            <li>Comfortable walking shoes</li>
+                            <li>Light jacket for evenings</li>
+                            <li>Umbrella or light raincoat</li>
+                            <li>Sunscreen and sunglasses</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Weather Tips</h4>
+                        <ul>
+                            <li>Stay hydrated in the summer heat</li>
+                            <li>Many museums are air-conditioned</li>
+                            <li>Expect brief afternoon showers</li>
+                            <li>Italian businesses often close during midday heat</li>
+                            <li>Plan indoor activities for the hottest hours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <table class="weather-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Condition</th>
+                        <th>High / Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>June 10</td>
+                        <td>Rome</td>
+                        <td><i class="fas fa-sun"></i> Sunny</td>
+                        <td>27°C / 18°C</td>
+                    </tr>
+                    <tr>
+                        <td>June 11</td>
+                        <td>Rome</td>
+                        <td><i class="fas fa-sun"></i> Sunny</td>
+                        <td>28°C / 19°C</td>
+                    </tr>
+                    <tr>
+                        <td>June 12</td>
+                        <td>Florence</td>
+                        <td><i class="fas fa-cloud-sun"></i> Partly Cloudy</td>
+                        <td>26°C / 17°C</td>
+                    </tr>
+                    <tr>
+                        <td>June 13</td>
+                        <td>Florence</td>
+                        <td><i class="fas fa-cloud-sun"></i> Partly Cloudy</td>
+                        <td>25°C / 16°C</td>
+                    </tr>
+                    <tr>
+                        <td>June 14</td>
+                        <td>Florence</td>
+                        <td><i class="fas fa-cloud-rain"></i> Light Rain</td>
+                        <td>24°C / 16°C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="food" class="tab-content">
+            <h2>Food & Drink Guide</h2>
+            <div class="info-box">
+                <h3>Dining Tips in Italy</h3>
+                <div class="tips-list">
+                    <div class="tip-item">
+                        <span class="tip-highlight">Coperto:</span> Many restaurants charge a small cover charge per person
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-highlight">Tipping:</span> Not required but rounding up the bill is appreciated
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-highlight">Water:</span> Ask for "acqua naturale" (still) or "acqua frizzante" (sparkling)
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-highlight">Coffee:</span> Cappuccino is only consumed at breakfast, espresso after meals
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-highlight">Meal times:</span> Lunch 1-3pm, Dinner 8-10pm (earlier is considered touristy)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="food-categories">
+                <div class="category-card">
+                    <h3>Must-Try Dishes</h3>
+                    <ul class="food-list">
+                        <li>
+                            <h4>Pasta alla Carbonara</h4>
+                            <p>Classic Roman pasta with eggs, cheese, pancetta, and black pepper.</p>
+                        </li>
+                        <li>
+                            <h4>Bistecca alla Fiorentina</h4>
+                            <p>Thick T-bone steak grilled over chestnut wood, served rare.</p>
+                        </li>
+                        <li>
+                            <h4>Cicchetti</h4>
+                            <p>Venetian small plates, like tapas, served in traditional bacari wine bars.</p>
+                        </li>
+                        <li>
+                            <h4>Gelato</h4>
+                            <p>Italian ice cream with intense flavors and smooth texture.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category-card">
+                    <h3>Restaurants to Visit</h3>
+                    <ul class="food-list">
+                        <li>
+                            <h4>Armando al Pantheon (Rome)</h4>
+                            <p>Traditional Roman cuisine in a family-run restaurant near the Pantheon.</p>
+                        </li>
+                        <li>
+                            <h4>All'Antico Vinaio (Florence)</h4>
+                            <p>Famous sandwich shop with enormous, flavorful panini.</p>
+                        </li>
+                        <li>
+                            <h4>Osteria Bancogiro (Venice)</h4>
+                            <p>Overlooking the Grand Canal with excellent Venetian seafood.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="tab-content">
+            <h2>Things to Do</h2>
+            <div class="info-box">
+                <h3>Activity Planning Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>Transportation Tips</h4>
+                        <ul>
+                            <li>Book high-speed trains in advance</li>
+                            <li>Use city transit passes for savings</li>
+                            <li>Validate tickets before boarding trains</li>
+                            <li>Consider city walking tours</li>
+                            <li>Water buses (vaporetti) in Venice</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h4>General Tips</h4>
+                        <ul>
+                            <li>Book major attractions ahead of time</li>
+                            <li>Many museums closed on Mondays</li>
+                            <li>Dress modestly for church visits</li>
+                            <li>Avoid midday heat with indoor activities</li>
+                            <li>Free museum days on first Sunday</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-categories">
+                <div class="category-card">
+                    <h3>Rome Highlights</h3>
+                    <ul class="activity-list">
+                        <li>
+                            <h4>The Colosseum & Roman Forum</h4>
+                            <p>Ancient amphitheater and ruins of the ancient Roman government center.</p>
+                        </li>
+                        <li>
+                            <h4>Vatican Museums & St. Peter's</h4>
+                            <p>Artistic masterpieces including the Sistine Chapel and magnificent basilica.</p>
+                        </li>
+                        <li>
+                            <h4>Trevi Fountain</h4>
+                            <p>Baroque masterpiece and popular spot to toss a coin for good luck.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category-card">
+                    <h3>Florence Highlights</h3>
+                    <ul class="activity-list">
+                        <li>
+                            <h4>Uffizi Gallery</h4>
+                            <p>World-class museum housing Renaissance masterpieces.</p>
+                        </li>
+                        <li>
+                            <h4>Florence Cathedral & Duomo</h4>
+                            <p>Iconic red-domed cathedral with panoramic city views from the top.</p>
+                        </li>
+                        <li>
+                            <h4>Ponte Vecchio</h4>
+                            <p>Medieval stone bridge lined with jewelry shops spanning the Arno River.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="category-card">
+                    <h3>Venice Highlights</h3>
+                    <ul class="activity-list">
+                        <li>
+                            <h4>St. Mark's Square & Basilica</h4>
+                            <p>The main public square and Byzantine cathedral of Venice.</p>
+                        </li>
+                        <li>
+                            <h4>Gondola Ride</h4>
+                            <p>Traditional Venetian boat tour through the scenic canals.</p>
+                        </li>
+                        <li>
+                            <h4>Rialto Market & Bridge</h4>
+                            <p>Historic market and oldest bridge crossing the Grand Canal.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="facts" class="tab-content">
+            <h2>Fun Facts & Useful Information</h2>
+            
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <h3>Language</h3>
+                    <p>While Italian is the official language, English is widely spoken in tourist areas. Learning a few basic phrases like "Grazie" (Thank you) and "Per favore" (Please) is appreciated.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>Money</h3>
+                    <p>Italy uses the Euro (€). ATMs are widely available. While credit cards are accepted at most establishments, small shops and cafes may prefer cash.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>Opening Hours</h3>
+                    <p>Many shops and businesses close for a few hours in the afternoon (riposo). Restaurants typically open for dinner around 7:30pm.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <h3>Etiquette</h3>
+                    <p>Greet people with "Buongiorno" (Good day) or "Buonasera" (Good evening). Dress modestly when visiting churches. Avoid loud behavior in public places.</p>
+                </div>
+            </div>
+            
+            <div class="did-you-know">
+                <h3>Did You Know?</h3>
+                <ul class="fact-list">
+                    <li>Italy has the most UNESCO World Heritage Sites of any country (58).</li>
+                    <li>The first university in Europe, University of Bologna, was established in Italy in 1088.</li>
+                    <li>Venice is built on 118 small islands connected by about 400 bridges.</li>
+                    <li>The Vatican City is the smallest sovereign state in the world.</li>
+                    <li>Italians consume over 60 liters of wine per person annually.</li>
+                    <li>Rome has more than 2,000 fountains, more than any other city in the world.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created with ❤️ for our family adventure | 2025</p>
+            <p class="italian-phrase">"La vita è un viaggio, non una destinazione" - Life is a journey, not a destination</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
