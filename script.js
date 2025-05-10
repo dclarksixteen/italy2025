@@ -89,6 +89,11 @@ function formatDate(dateString) {
     return new Date(dateString).toLocaleDateString('en-US', options);
 }
 
+// Helper function to convert C to F
+function celsiusToFahrenheit(celsius) {
+    return Math.round((celsius * 9/5) + 32);
+}
+
 // Function to add days to the itinerary dynamically
 // Uncomment and use if you want to add days programmatically
 /*
@@ -405,7 +410,7 @@ function initWeather() {
             <div class="weather-date">Typical May Weather</div>
             <div class="weather-location">${location.name}</div>
             <div class="weather-condition">Mostly sunny</div>
-            <div class="weather-temp">22°C</div>
+            <div class="weather-temp">${celsiusToFahrenheit(22)}°F</div>
             <div class="weather-details">
                 <div class="weather-detail"><i class="fas fa-tint"></i> Avg. Humidity: 65%</div>
                 <div class="weather-detail"><i class="fas fa-wind"></i> Avg. Wind: 12 km/h</div>
@@ -441,7 +446,7 @@ function initWeather() {
                 <td>${trip.date}</td>
                 <td>${trip.location}</td>
                 <td><i class="fas ${condition.icon}"></i> ${condition.condition}</td>
-                <td>${condition.high}°C / ${condition.low}°C</td>
+                <td>${celsiusToFahrenheit(condition.high)}°F / ${celsiusToFahrenheit(condition.low)}°F</td>
                 <td>${condition.rain}%</td>
             `;
             forecastTable.appendChild(row);
@@ -474,7 +479,7 @@ function initWeather() {
             <div class="weather-date">Current Weather (${formattedCurrentDate})</div>
             <div class="weather-location">${data.location_name}</div>
             <div class="weather-condition">${currentWeather.weather[0].description}</div>
-            <div class="weather-temp">${Math.round(currentWeather.temp)}°C</div>
+            <div class="weather-temp">${celsiusToFahrenheit(currentWeather.temp)}°F</div>
             <div class="weather-details">
                 <div class="weather-detail"><i class="fas fa-tint"></i> Humidity: ${currentWeather.humidity}%</div>
                 <div class="weather-detail"><i class="fas fa-wind"></i> Wind: ${Math.round(currentWeather.wind_speed * 3.6)} km/h</div>
@@ -508,11 +513,11 @@ function initWeather() {
                 day: 'numeric' 
             });
             
-            row.innerHTML = `
+                row.innerHTML = `
                 <td>${tripInfo.date}</td>
                 <td>${tripInfo.location}</td>
                 <td><i class="${getWeatherIconClass(day.weather[0].main)}"></i> ${day.weather[0].description}</td>
-                <td>${Math.round(day.temp.max)}°C / ${Math.round(day.temp.min)}°C</td>
+                <td>${celsiusToFahrenheit(day.temp.max)}°F / ${celsiusToFahrenheit(day.temp.min)}°F</td>
                 <td>${day.pop ? Math.round(day.pop * 100) : 0}%</td>
             `;
             
